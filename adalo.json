@@ -1,0 +1,13 @@
+{
+    "displayName": "seven",
+    "components": [
+        {
+            "name": "Sms",
+            "manifest": "./src/components/Sms/manifest.json"
+        }
+    ],
+    "author": "seven communications GmbH & Co. KG",
+    "description": "Consumes the seven REST API",
+    "logo": "./seven-logo.png",
+    "supportURL": "https://www.sms77.io"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "@seven/adalo",
+    "description": "adalo components for seven",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "author": "seven communications GmbH & Co. KG",
+    "scripts": {
+        "start": "adalo dev",
+        "login": "adalo login",
+        "publish": "adalo publish"
+    },
+    "devDependencies": {
+        "@adalo/cli": "^0.0.55",
+        "react": "^16.14.0",
+        "react-art": "^16.13.1",
+        "react-dom": "^16.14.0",
+        "react-native-web": "^0.9.13"
+    }
+}

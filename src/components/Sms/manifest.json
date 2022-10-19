@@ -1,0 +1,55 @@
+{
+    "displayName": "sms",
+    "defaultWidth": 160,
+    "defaultHeight": 24,
+    "components": "./index.js",
+    "icon": "./thumbnail.png",
+    "props": [
+        {
+            "name": "apiKey",
+            "displayName": "API Key",
+            "type": "text",
+            "default": "YourSuperSecretSevenApiKeyRequiredForSending"
+        },
+        {
+            "name": "delay",
+            "displayName": "Delay",
+            "type": "date"
+        },
+        {
+            "name": "flash",
+            "displayName": "Flash",
+            "type": "boolean",
+            "default": false
+        },
+        {
+            "name": "from",
+            "displayName": "From",
+            "type": "text",
+            "default": "Adalo"
+        },
+        {
+            "name": "performanceTracking",
+            "displayName": "Performance Tracking",
+            "type": "boolean",
+            "default": false
+        },
+        {
+            "name": "text",
+            "displayName": "Text",
+            "type": "text",
+            "default": "Hello there!"
+        },
+        {
+            "name": "to",
+            "displayName": "To",
+            "type": "text",
+            "default": "+491771783130"
+        },
+        {
+            "name": "callbackAction",
+            "displayName": "Callback action",
+            "type": "action"
+        }
+    ]
+}
