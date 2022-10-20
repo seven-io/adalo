@@ -4,6 +4,10 @@
         {
             "name": "Sms",
             "manifest": "./src/components/Sms/manifest.json"
+        },
+        {
+            "name": "Voice",
+            "manifest": "./src/components/Voice/manifest.json"
         }
     ],
     "author": "seven communications GmbH & Co. KG",

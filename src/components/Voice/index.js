@@ -2,7 +2,8 @@ import React from 'react'
 import {Button, Text, View} from 'react-native'
 import {request} from '../../utils'
 
-export default ({apiKey, callbackAction, delay, flash, from, performanceTracking, text, to}) => {
+export default props => {
+    const {apiKey, callbackAction, from, text, to} = props
     const [disabled, setDisabled] = React.useState(false)
     const [response, setResponse] = React.useState(null)
 
@@ -10,20 +11,16 @@ export default ({apiKey, callbackAction, delay, flash, from, performanceTracking
         <Button
             disabled={disabled}
             onPress={async () => {
-                const data = {
-                    apiKey,
-                    delay,
-                    flash,
-                    from,
-                    json: true,
-                    performance_tracking: performanceTracking,
-                    text,
-                    to,
-                }
-
                 try {
                     setDisabled(true)
-                    const json = await request('POST', 'sms', data)
+                    const data = {
+                        apiKey,
+                        from,
+                        json: true,
+                        text,
+                        to,
+                    }
+                    const json = await request('POST', 'voice', data)
                     setResponse(json.success)
                 } catch (e) {
                     setResponse(e.message)
@@ -32,7 +29,7 @@ export default ({apiKey, callbackAction, delay, flash, from, performanceTracking
                     if (callbackAction) callbackAction(response)
                 }
             }}
-            title='Send SMS'
+            title='Start Voice Call'
         />
 
         {
