@@ -1,6 +1,22 @@
 {
-    "displayName": "seven",
+    "author": "seven communications GmbH & Co. KG",
     "components": [
+        {
+            "name": "LookupCNAM",
+            "manifest": "./src/components/LookupCNAM/manifest.json"
+        },
+        {
+            "name": "LookupFormat",
+            "manifest": "./src/components/LookupFormat/manifest.json"
+        },
+        {
+            "name": "LookupHLR",
+            "manifest": "./src/components/LookupHLR/manifest.json"
+        },
+        {
+            "name": "LookupMNP",
+            "manifest": "./src/components/LookupMNP/manifest.json"
+        },
         {
             "name": "Sms",
             "manifest": "./src/components/Sms/manifest.json"
@@ -10,9 +26,11 @@
             "manifest": "./src/components/Voice/manifest.json"
         }
     ],
-    "author": "seven communications GmbH & Co. KG",
     "description": "Consumes the seven REST API",
+    "details": "Requires an API key from seven",
+    "displayName": "seven",
     "logo": "./seven-logo.png",
+    "price": 0,
     "requiresThirdPartySubscription": true,
-    "supportURL": "https://www.sms77.io"
+    "supportURL": "https://www.seven.io"
 }

@@ -3,7 +3,7 @@
     "defaultWidth": 160,
     "defaultHeight": 24,
     "components": "./index.js",
-    "icon": "./thumbnail.png",
+    "icon": "../seven.png",
     "props": [
         {
             "name": "apiKey",

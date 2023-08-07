@@ -1,5 +1,5 @@
 {
-    "displayName": "voice",
+    "displayName": "lookupFormat",
     "defaultWidth": 160,
     "defaultHeight": 24,
     "components": "./index.js",
@@ -12,22 +12,10 @@
             "default": "YourSuperSecretSevenApiKeyRequiredForSending"
         },
         {
-            "name": "from",
-            "displayName": "From",
+            "name": "numbers",
+            "displayName": "Numbers",
             "type": "text",
-            "default": "+491771783130"
-        },
-        {
-            "name": "text",
-            "displayName": "Text",
-            "type": "text",
-            "default": "Hello there!"
-        },
-        {
-            "name": "to",
-            "displayName": "To",
-            "type": "text",
-            "default": "+4943130149270"
+            "default": "+4917999999999,455555555555"
         },
         {
             "name": "callbackAction",
