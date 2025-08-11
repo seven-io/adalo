@@ -11,7 +11,7 @@
         "publish": "adalo publish"
     },
     "devDependencies": {
-        "@adalo/cli": "^0.0.57",
+        "@adalo/cli": "^1.0.6",
         "react": "^16.14.0",
         "react-art": "^16.13.1",
         "react-dom": "^16.14.0",
