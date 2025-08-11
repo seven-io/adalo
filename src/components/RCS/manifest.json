@@ -1,0 +1,43 @@
+{
+    "displayName": "rcs",
+    "defaultWidth": 160,
+    "defaultHeight": 24,
+    "components": "./index.js",
+    "icon": "../seven.png",
+    "props": [
+        {
+            "name": "apiKey",
+            "displayName": "API Key",
+            "type": "text",
+            "default": "YourSuperSecretSevenApiKeyRequiredForSending"
+        },
+        {
+            "name": "delay",
+            "displayName": "Delay",
+            "type": "date"
+        },
+        {
+            "name": "from",
+            "displayName": "From",
+            "type": "text",
+            "default": "AgentID"
+        },
+        {
+            "name": "text",
+            "displayName": "Text",
+            "type": "text",
+            "default": "Hello there!"
+        },
+        {
+            "name": "to",
+            "displayName": "To",
+            "type": "text",
+            "default": "+491771783130"
+        },
+        {
+            "name": "callbackAction",
+            "displayName": "Callback action",
+            "type": "action"
+        }
+    ]
+}
