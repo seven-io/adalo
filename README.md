@@ -1,70 +1,73 @@
-<img alt='' src="https://www.seven.io/wp-content/uploads/Logo.svg" width="250" />
+<p align="center">
+  <img src="https://www.seven.io/wp-content/uploads/Logo.svg" width="250" alt="seven logo" />
+</p>
 
-# Seven Adalo Components
+<h1 align="center">seven Components for Adalo</h1>
 
-A collection of Adalo components that integrate with the [seven.io](https://www.seven.io) communications API, providing SMS, Voice, RCS messaging, and number lookup services for your Adalo apps.
+<p align="center">
+  Collection of <a href="https://www.adalo.com/">Adalo</a> components for SMS, RCS, Voice and number-lookups via the seven gateway.
+</p>
 
-## Prerequisites
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-teal.svg" alt="MIT License" /></a>
+  <img src="https://img.shields.io/badge/Adalo-component-blue" alt="Adalo component" />
+  <img src="https://img.shields.io/badge/React%20Native-Web-61dafb" alt="React Native Web" />
+</p>
 
-- An active seven.io account and API key
-- Adalo account for app development
-
-## Installation
-
-This component library is published to the Adalo marketplace. To use these components in your Adalo app:
-
-1. Open your Adalo app in the editor
-2. Navigate to the Components section
-3. Search for "seven" to find this component library
-4. Add the components you need to your app
-
-## API Key Setup
-
-All components require a seven.io API key to function:
-
-1. Sign up at [seven.io](https://www.seven.io) to get your API key
-2. In your Adalo app, configure each component with your API key
-3. Test the components to ensure proper integration
+---
 
 ## Components
 
-### Messaging Components
+### Messaging
 
-- **SMS** - Send text messages with support for flash messages, delivery scheduling, and performance tracking
-- **RCS** - Send Rich Communication Services messages with enhanced features
-- **Voice** - Initiate voice calls through the seven.io platform
+- **SMS** - Send text messages with flash, delay and performance-tracking options
+- **RCS** - Send Rich Communication Services messages with enhanced media support
+- **Voice** - Place text-to-speech voice calls
 
-### Lookup Services
+### Lookups
 
 - **Lookup Format** - Validate and format phone numbers
-- **Lookup CNAM** - Retrieve caller name information
-- **Lookup HLR** - Home Location Register lookups for network information  
-- **Lookup MNP** - Mobile Number Portability checks
+- **Lookup CNAM** - Caller-name lookup
+- **Lookup HLR** - Home Location Register info
+- **Lookup MNP** - Mobile Number Portability check
+
+## Prerequisites
+
+- An [Adalo](https://www.adalo.com/) account
+- A [seven account](https://www.seven.io/) with API key ([How to get your API key](https://help.seven.io/en/developer/where-do-i-find-my-api-key))
+
+## Installation
+
+The component library is published to the Adalo marketplace.
+
+1. Open your Adalo app in the editor.
+2. Open the *Components* panel.
+3. Search for **seven** and add the components you need.
+
+## Configuration
+
+Each component takes the following common props:
+
+| Prop | Description |
+|------|-------------|
+| `apiKey` | Your seven API key |
+| `callbackAction` | Adalo action to run when the request completes |
+
+In addition, each component takes its own message/lookup-specific props (`to`, `from`, `text`, etc.).
 
 ## Development
 
-To develop or customize these components:
-
 ```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run start
-
-# Login to Adalo (required for publishing)
-npm run login
-
-# Publish to Adalo marketplace
-npm run publish
+npm install         # install dependencies
+npm run start       # local Adalo CLI dev server
+npm run login       # authenticate against Adalo
+npm run publish     # publish to the Adalo marketplace
 ```
 
 ## Support
 
-For component issues or questions:
-- Visit [seven.io support](https://www.seven.io) for API-related questions
-- Check the Adalo documentation for component integration help
+Need help? Feel free to [contact us](https://www.seven.io/en/company/contact/) or [open an issue](https://github.com/seven-io/adalo/issues).
 
 ## License
 
-MIT - See LICENSE file for details
+[MIT](LICENSE)
