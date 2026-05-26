@@ -11,10 +11,10 @@
         "publish": "adalo publish"
     },
     "devDependencies": {
-        "@adalo/cli": "^1.0.6",
+        "@adalo/cli": "^1.0.9",
         "react": "^16.14.0",
         "react-art": "^16.13.1",
         "react-dom": "^16.14.0",
-        "react-native-web": "^0.9.13"
+        "react-native-web": "^0.21.2"
     }
 }
